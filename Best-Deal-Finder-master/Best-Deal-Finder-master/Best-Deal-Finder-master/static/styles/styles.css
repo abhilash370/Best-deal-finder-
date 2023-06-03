@@ -1,0 +1,174 @@
+body {
+	background-color: #A8A8A8;
+	font-family: 'Open Sans', sans-serif;
+  }
+  
+  .search_div {
+	justify-content: center;
+	margin-top: 3rem;
+  }
+  
+  .search_bar {
+	height: 4rem;
+	width: 100%;
+	padding: 1rem;
+	font-size: 2rem;
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	background-color: #edf2f7;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .search_bar::placeholder {
+	opacity: 0.5;
+	font-size: 1.5rem;
+  }
+  
+  .search_button {
+	position: absolute;
+	top: 50%;
+	right: 1.5rem;
+	transform: translateY(-50%);
+	height: 3.5rem;
+	width: 3.5rem;
+	border: none;
+	border-radius: 50%;
+	background-color: #5a67d8;
+	color: #fff;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .search_query {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 60%;
+	margin: 2rem 0;
+  }
+ 
+  
+  #find_best_deal {
+	font-size: 3.1rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #1b1a1a;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	background-color:#CCCCCC;
+	padding: 1rem;
+	border-radius: 2rem;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+  }
+  
+   .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  
+  .website_selection {
+	text-align: center;
+  }
+  
+  #select_websites {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #2d3748;
+  }
+  
+  .checkbox_grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	justify-items: center;
+  }
+  
+  .checkbox_item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+  }
+  
+  .checkbox_item input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+  }
+  
+  .checkbox_item label {
+	font-size: 1.8rem;
+	color: #2d3748;
+	position: relative;
+	padding-left: 2.5rem;
+	cursor: pointer;
+  }
+  
+  .checkbox_item label::before {
+	content: '';
+	position: absolute;
+	top: 0.2rem;
+	left: 0;
+	width: 1.8rem;
+	height: 1.8rem;
+	background-color: #fff;
+	border: 2px solid #4299e1;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .checkbox_item input[type="checkbox"]:checked + label::before {
+	background-color: #4299e1;
+  }
+  
+  .checkbox_item label::after {
+	content: '';
+	position: absolute;
+	top: 0.6rem;
+	left: 0.6rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: #fff;
+	border-right: 2px solid #4299e1;
+	border-bottom: 2px solid #4299e1;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+  }
+  
+  .number_of_search_results {
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #2d3748;
+	font-weight: bolder;
+  }
+  
+  .number_of_search_results label {
+	font-size: 1.5rem;
+	color: #2d3748;
+  }
+  
+  .number_of_search_results select {
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	color: #2d3748;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .number_of_search_results select:hover {
+	color: #4299e1;
+  }
+  

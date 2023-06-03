@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+		<title>Best Deal Finder</title>
+	</head>
+	<body>
+		<form>
+			<div class="container">
+				<h1 id="find_best_deal">Save Time, Save Money - Find The Best Deals Effortlessly</h1>
+			  </div>			  
+			<div class="search_div">
+				<div class="search_query">
+					<input type="text" id="search_bar" class="search_bar" name="search_bar" placeholder=" What are you looking for today?">
+					<input type="image" src="{{ url_for('static', filename='img/search_button.png')}}" alt="Search Button" id="search_button" class="search_button">
+				</div>
+				<div class="number_of_search_results">
+					<label for="select_number">Number of deals:</label>
+					<select id="select_number" name="select_number">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3" selected>3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					  <option value="6">6</option>
+					  <option value="7">7</option>
+					  <option value="8">8</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					</select>
+				  </div>
+				  
+			</div>
+			<br>
+			<div class="website_selection">
+				<h2 id="select_websites">Select the websites you want to search:</h2>
+				<div class="checkbox_grid">
+					<div class="checkbox_item checkbox_left">
+					<input type="checkbox" id="amazon_checkbox" name="amazon_checkbox" checked>
+					<label for="amazon_checkbox">Amazon India</label>
+				  </div>
+				  <div class="checkbox_item checkbox_left">
+					<input type="checkbox" id="flipkart_checkbox" name="flipkart_checkbox" checked>
+					<label for="flipkart_checkbox">Flipkart</label>
+				  </div>
+				  <div class="checkbox_item checkbox_left">
+					<input type="checkbox" id="mdcomputers_checkbox" name="mdcomputers_checkbox">
+					<label for="mdcomputers_checkbox">MD Computers</label>
+				  </div>
+				  <div class="checkbox_item checkbox_right">
+					<input type="checkbox" id="theitdepot_checkbox" name="theitdepot_checkbox">
+					<label for="theitdepot_checkbox">The IT Depot</label>
+				  </div>
+				  <div class="checkbox_item checkbox_right">
+					<input type="checkbox" id="neweggindia_checkbox" name="neweggindia_checkbox">
+					<label for="neweggindia_checkbox">Newegg India</label>
+				  </div>
+				  <div class="checkbox_item checkbox_right">
+					<input type="checkbox" id="primeabgb_checkbox" name="primeabgb_checkbox">
+					<label for="primeabgb_checkbox">Prime ABGB</label>
+				  </div>
+				</div>
+			  </div>
+			  
+		</form>
+		<div class="results_div">
+		</div>
+		<div class="csv_div">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="{{ url_for('static', filename='js/script.js') }}"> </script>
+		<script src="https://kit.fontawesome.com/5e6b5ddfea.js" crossorigin="anonymous"></script>
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	</body>
+</html>
